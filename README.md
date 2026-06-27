@@ -86,10 +86,10 @@ python main.py
 ### 1. 曲线模式几何特性对比（Bezier vs B-Spline）
 
 Bezier：
-![实验演示视频](https://github.com/BNUCG-2026/CG-lab/blob/main/video/Bezier.gif)
+![实验演示视频](https://github.com/BNUCG-2026/Bezier_Curve/main/video/Bezier.gif)
 
 B-Spline：
-![实验演示视频](https://github.com/BNUCG-2026/CG-lab/blob/main/video/B-Spline.gif)
+![实验演示视频](https://github.com/BNUCG-2026/Bezier_Curve/main/video/B-Spline.gif)
 
 按下键盘 `M` 键，界面左上角终端输出切换为 `B-Spline (B样条)`。
 在W型折线末端添加新点时，贝塞尔曲线全线发生形变；而切换为B样条后，形变被严格限制在局部，左侧曲线保持不动。展现了B样条不通过首尾端点的逼近几何特性。
@@ -111,10 +111,10 @@ B-Spline：
 * **开启反走样 (AA On)**：激活 GPU 的 $3 \times 3$ 高斯距离邻域混合后，硬点亮变成了“加权模糊”。斜线边缘长出了一层细腻的、深浅不一的绿色羽化带，视觉上表现得极度平滑。
 
 Bezier：
-![实验演示视频](https://github.com/BNUCG-2026/CG-lab/blob/main/video/Bezier.gif)
+![实验演示视频](https://github.com/BNUCG-2026/Bezier_Curve/main/video/Bezier.gif)
 
 反走样：
-![实验演示视频](https://github.com/BNUCG-2026/CG-lab/blob/main/video/反走样抗锯齿.gif)
+![实验演示视频](https://github.com/BNUCG-2026/Bezier_Curve/main/video/反走样抗锯齿.gif)
 
 传统光栅化会导致严重的阶梯状狗牙断层；开启本实验实现的亚像素级高斯衰减算法后，边缘引入了平滑的半透明混色羽化，使低分辨率屏幕也能呈现极度丝滑的视觉曲线。
 
